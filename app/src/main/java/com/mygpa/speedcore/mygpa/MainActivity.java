@@ -18,7 +18,11 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-       FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        // Ini ceritanya data yang bakalan kita pake nanti
+        String infoUserJSON = "{\"photo\": \"res/Image1.jpg\",\"name\": \"Firmansyah Yanuar\",\"prodi\": \"Teknik Informatika\"}";
+        String dataMatkulJSON = "[{\"nama_matkul\": \"Struktur Data\",\"sks\": 3,\"nilai\": {\"tugas\": 100,\"kuis\": 85,\"uts\": 90,\"uas\": 60,\"prak\": 0,\"persen_tugas\": 10,\"persen_kuis\": 20,\"persen_uts\": 30,\"persen_uas\": 40,\"persen_prak\": 0}},{\"nama_matkul\": \"Algoritma dan Pemrograman\",\"sks\": 3,\"nilai\": {\"tugas\": 90,\"kuis\": 75,\"uts\": 80,\"uas\": 70,\"prak\": 80,\"persen_tugas\": 10,\"persen_kuis\": 10,\"persen_uts\": 30,\"persen_uas\": 40,\"persen_prak\": 10}},{\"nama_matkul\": \"Logika Informatika\",\"sks\": 3,\"nilai\": {\"tugas\": 80,\"kuis\": 60,\"uts\": 70,\"uas\": 50,\"prak\": 90,\"persen_tugas\": 10,\"persen_kuis\": 10,\"persen_uts\": 30,\"persen_uas\": 40,\"persen_prak\": 10}}]";
+
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
